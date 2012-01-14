@@ -1,0 +1,80 @@
+%ul#products.carousel
+  %li
+    %img{:src=>"/images/carousel/panel1.png", :alt=> 'panel'}
+  %li
+    %img{:src=>"/images/carousel/panel2.png", :alt=> 'panel'}
+  %li
+    %img{:src=>"/images/carousel/panel3.png", :alt=> 'panel'}
+.clear
+.left.main
+  %h1 
+    %span.a SOLAR 
+    %span.b HEATING
+
+  %p
+    %b Using the power of the sun, solar panels provide an energy efficient supply of heated water.
+
+  %p
+    Over the last few years the use of solar panels to heat swimming pools has become every more popular. This has seen an influx of many inferior panels offering unrealistic warranties and no back-up service. At Lex Pools we offer top quality panels combined with correct and professional installation.
+
+  %p
+    We have heated thousands of pools of all shapes and sizes, using the proven Sun Command solar panel. The Sun Command panel is manfuactured from UV stabilised polypropylene. All seams are thermo welded and pressure tested ensuring a leak free long lasting panel.
+
+  %h1 
+    %span.a SUN COMMAND 
+    %span.b PANELS
+
+  %p
+    %b Sun Command solar panels feature:
+
+  %ul
+    %li 5 year panel warranty (panels are not patched but replaced)
+    %li Aesthetically pleasing solid type panel (no gaps between tubes)
+    %li 218 tubes per panel
+    %li Lare panel surface 3080mm x 1350mm
+    %li Custom sized panels available to suit your roof
+    %li UV stabilised for longer lifespan in the sun
+    %li Resistant to hail, frost and chemicals
+    %li Suitable for use with saltwater chlorinators
+    %li Atuo draining with vacuum breaker to prevent freezing
+    %li Bypass value for temperature control
+    %li High quality PVC non-return valve to protect your pump and filter system
+    %li All pipes and fittings are black for maximum efficiency and neatness
+    %li Installation in less than 1 day by one of our fully supervised installation teams
+    %li No extra monthly running costs
+    %li Modular for easy upgrades
+    %li Can be installed on almost any type of roof
+    %li Technicaly superior with a proven track record
+
+  %p
+    %b How it works:
+
+  %p
+    The Sun Command solar panel system is an efficient collector of the free enegery availabel from the sun. The panels are mounted onto the roof of your home, or othr suitable structure, and clean filtered water passed through the panels during the day time, by means of your existing pool pump.
+
+  %p
+    The water rushing through the panels collects the irradiated heat from the sun and is returned to your pool as warmed water. This process is continually repeated throughout the day.
+
+  %p
+    You can control the temperature of your pool by switching the bypass value on and off to achieve your perfect temperature.
+
+  %p
+    Our systems inculde a non-return valve to protect your pump and filter from back pressure when the system switches off. They also have a vacuum release valve to ensure all pipes and panels are drained when switched off. This ensures that there is no risk of freezing during the winter, giving you a hassle free solar system.
+
+  %p
+    %b Performance
+
+  %p Systems can be graded to suit almost any temperature requirement. Please consult our offices for correct grading. However, must units are graded for an 8-9 month swimming season. Here is a typical heating example.
+
+  %p
+    %b Panel Efficiency
+
+  %p
+    A solar panel is most effective on a north facing roof at a 30 degree pitch. Other angles and directions can be effectie, however this needs to be taken into account when grading the system.
+.right
+  = render 'services'
+.clear
+:JAVASCRIPT
+  $(document).ready(function() {
+    $('ul#products').roundabout();
+  });

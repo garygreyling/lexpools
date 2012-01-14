@@ -1,0 +1,44 @@
+@mixin slide-box-dimensions
+  width: 720px
+  height: 230px
+
+#slides
+  .slides_container
+    @include slide-box-dimensions
+    margin: 40px auto
+
+    .slide
+      @include slide-box-dimensions
+      color: #3684FF
+      font-size: 36px
+
+      .caption
+        margin: 30px 0 0 30px
+        width: 220px
+        float: left
+        text-align: center
+        img
+          margin: 20px 0 0 0
+          cursor: pointer
+
+      img
+        float: right
+        margin: 0 20px 0 0
+
+  .next, .prev 
+    width: 41px
+    height: 67px
+    display: block
+    margin-top: -170px
+    a
+      display: none
+
+  .next
+    float: left
+    background-image: url('/images/slide_left.png')
+    margin-left: 60px
+
+  .prev
+    float: right
+    background-image: url('/images/slide_right.png')
+    margin-right: 60px

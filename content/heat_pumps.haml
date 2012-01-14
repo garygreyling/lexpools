@@ -1,0 +1,59 @@
+%ul#products.carousel
+  %li
+    %img{:src=>"/images/carousel/heatpump1.png", :alt=> 'heatpump'}
+  %li
+    %img{:src=>"/images/carousel/heatpump2.png", :alt=> 'heatpump'}
+  %li
+    %img{:src=>"/images/carousel/heatpump3.png", :alt=> 'heatpump'}
+.clear
+.left.main
+  %h1 
+    %span.a HEAT
+    %span.b PUMPS
+
+  %p
+    %b Heat pumps are a neat, compact and effective way of heating your pool.
+
+  %p
+    Each heat pump has a digitas display showing you the temperature of your pool, all you need to do is simply enter your desired pool temperature and let your heat pump automatically maintain your pool temperature.
+
+  %p
+    Heat pmupms are available in many sizes for splash pools right up to olympic size pools. Most units are graded for an 8-9 month swimming season, however units can be graded to suit year round swimming.
+
+  %p
+    We offer free on-site quotations to ensure you receive the correct size unit to fit your desired temperature and swimming season.
+
+  %p
+    We offer you a market leading product backed by superior after sales service, maintenance and spares.
+
+  %h1 
+    %span.a AQUATEMP
+    %span.b HEAT PUMPS
+
+  %p
+    %b A market leader in pool heat pumps, Aquatemp pumps feature:
+
+  %ul
+    %li Copeland compliant scroll compressor
+    %li User-freindly digital control panel
+    %li Patented double spiral titanium heat exchanger
+    %li Hight performance fan
+    %li Suitable for use with saltwater chlorinators
+    %li More than 25 years on constant improvement, research and development
+    %li Full back-up and spares available
+    %li Full weather-proof unit
+    %li Brushed stainless steel outer casing with lockable control panel
+
+  %p
+    NB: It is a common misconception that heat pumps use a lot of electricity and are expensive to run. Heat pumps are in fact very economical to run due to the heat exchange technology that is used.
+
+.right
+  = render 'services'
+.right
+  %img{:src=>"/images/aquatemp.png", :alt=> 'heatpump', :style => 'margin: 10px 0'}
+.clear
+
+:JAVASCRIPT
+  $(document).ready(function() {
+    $('ul#products').roundabout();
+  });

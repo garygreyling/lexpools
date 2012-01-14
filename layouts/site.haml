@@ -1,0 +1,91 @@
+!!!
+%html
+  %head
+    %title
+    %link{:href => "/styles.css", :rel => "stylesheet", :type => "text/css"}
+    %script{:type => "text/javascript", :src => "/js/jquery-1.6.4.min.js"}
+    %script{:type => "text/javascript", :src => "/js/slides.min.jquery.js"}
+    %script{:type => "text/javascript", :src => "/js/application.js"}
+    %script{:type => "text/javascript", :src => "/js/jquery-roundabout-min.js"}
+    :plain
+      <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="ie.css" />
+      <![endif]-->
+  %body
+    #contents_outer
+      #contents
+        #header
+          %img{:src=>"/images/lexpools_logo.png", :alt=>"Lex Pools Logo"}
+        #nav
+          %ul#main_menu
+            %li.home{:onclick => "window.location='/'"}
+            %li
+              %span.link_name
+                POOL HEATING
+              %ul#child
+                %li 
+                  %span.link_name
+                    %a{:href => '/heat_pumps'} HEAT PUMPS
+                %li 
+                  %span.link_name
+                    %a{:href => '/solar_heating'} SOLAR HEATING
+            %li
+              %span.link_name
+                %a{:href => '/saltwater_chlorinators'} SALTWATER CHLORINATORS
+            %li
+              %span.link_name
+                %a{:href => '/pool_shop'} POOL SHOP
+            %li
+              %span.link_name
+                POOL NETS & COVERS
+              %ul#child
+                %li 
+                  %span.link_name
+                    %a{:href => '/solar_blankets'} SOLAR BLANKETS
+                %li 
+                  %span.link_name
+                    %a{:href => '/safety_covers'} SAFETY COVERS
+            %li
+              %span.link_name
+                %a{:href => '/contact_us'} CONTACT US
+            %li.end
+          .clear
+        #body
+          = yield
+        #footer
+          .left
+            %h3 Follow Us
+            %img{:src => "/images/lexpools_rights.png"}
+          .left
+            %h3 Quick Links
+            %ul
+              %li
+                %a{:href => '/heat_pumps'} Pool Heating
+              %li
+                %a{:href => '/saltwater_chlorinators'} Saltwater Chlorinators
+              %li
+                %a{:href => '/pool_shop'} Pool Shop
+              %li
+                %a{:href => '/solar_blankets'} Nets & Covers
+              %li
+                %a{:href => '/contact_us'} Contact Us
+                
+          .left
+            %h3 Contact Us
+            %p
+              778 Cascades Road
+              %br
+              Little Falls
+              %br
+              Gauteng
+
+            %p
+              0861 102 013
+              %br
+              sales@lexpools.co.za
+
+          .clear
+          %p.copy_right
+            &copy; Lex Pools 2011. All rights reserved. No portion of this website may be copied or reproduced without written consent.
+          .clear
+

@@ -1,0 +1,46 @@
+%ul#products.carousel
+  %li
+    %img{:src=>"/images/carousel/shop1.png", :alt=> 'shop'}
+  %li
+    %img{:src=>"/images/carousel/shop2.png", :alt=> 'shop'}
+  %li
+    %img{:src=>"/images/carousel/shop3.png", :alt=> 'shop'}
+  %li
+    %img{:src=>"/images/carousel/shop4.png", :alt=> 'shop'}
+.left.main
+  %h1 
+    %span.a LEX POOLS 
+    %span.b LITTLE FALLS
+  %p
+    %b Stocked, smart and professional
+
+  %p
+    We would love tosee you at our pool shop at 778 Cascades Road, Little Falls where we offer a full range of pool related products.
+
+  %p
+    As an authorised Bio Guard dealer, we offer computerised water analysis backed by dependable, accurate advice and solutions.
+
+  %p
+    Our trained technicians provide prompt service and expert advice. Whether you need a new pump, filter, pool light or on-site pool system repairs, call us for a quality installation done right - the first time!
+
+  %p
+    %b Hours
+    %br
+    Monday - Friday
+    %br
+    7:30am - 5pm
+
+  %p
+    Saturday
+    %br
+    8am - 1pm
+
+  %p
+    Call: 086 110 2013
+.right
+  = render 'services'
+.clear
+:JAVASCRIPT
+  $(document).ready(function() {
+    $('ul#products').roundabout();
+  });

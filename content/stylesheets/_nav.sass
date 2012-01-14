@@ -1,0 +1,46 @@
+body
+  #nav
+    font-family: 'Conv_handgotl'
+    margin: 0 0 0 10px
+    color: #333
+    a, a:visited
+      color: #333
+      text-decoration: none
+    a:hover
+      text-decoration: underline
+    li
+      background-image: url('/images/nav_bg.png')
+      display: block
+      float: left
+      height: 55px
+      cursor: pointer
+      span.link_name
+        display: block
+        padding: 14px 14px 10px 14px
+        font-size: 16px
+    li.home
+      padding: 0
+      width: 54px
+      background-image: url('/images/home_button.png')
+    li.end
+      padding: 0
+      width: 12px
+      background-image: url('/images/nav_end.png')
+    li:hover
+      background-image: url('/images/nav_bg_hover.png')
+    li.home:hover
+      background-image: url('/images/home_button_hover.png')
+    li.end:hover
+      background-image: url('/images/nav_end.png')
+      cursor: default
+    li
+      ul
+        padding: 0
+        display: none
+        li, li:hover
+          float: none
+          height: auto
+          background-image: url('/images/subnav_bg.png')
+          span.link_name
+            padding: 0px 15px 10px 15px
+

@@ -1,0 +1,6 @@
+.slide.first
+  .caption
+    = @caption
+    .cta
+      %img{:src=>"images/slider_click.png", :alt=> 'click here', :onClick => "window.location='#{@target}'"}
+  %img{:src=>"images/products/#{@img}.png", :alt=> @img_alt}

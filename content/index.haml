@@ -1,0 +1,59 @@
+--- 
+title: Home
+---
+#slides
+  .slides_container
+    = render 'slide', :caption => 'Pool Covers & Blankets', :img => 'blanket', :img_alt => 'pool blanket', :target => '/solar_blankets'
+    = render 'slide', :caption => 'Salt Chlorinators', :img => 'chlorinator', :img_alt => 'salt chlorinator', :target => '/saltwater_chlorinators'
+    = render 'slide', :caption => 'Heat Pump Systems', :img => 'heat_pump', :img_alt => 'heat pump', :target => '/heat_pumps'
+    = render 'slide', :caption => 'Solar Heating Systems', :img => 'solar', :img_alt => 'solar panel', :target => '/solar_heating'
+
+.clear
+.left.main
+  %h1 
+    %span.a WELCOME TO 
+    %span.b LEX 
+    %span.c POOLS
+  %p
+    %b
+      There is nothing more inviting than a crystal clear pool at the perfect temperature
+
+  %p
+    Since 1998 Lex Pools (CK98/70561/23) has been at the forefront of pool heating and automatic chlorination solutions. Through our vast experience in both the domestic and the commercial swimming pool industry, we can supply and istall high quality systm to staisfy your needs.
+
+  %p
+    Our commercial portfolio includes:
+    %ul
+      %li Crawfod College (Craigavon)
+      %li Rodean School (Parktown)
+      %li St Andrews School for Girls (Bedfordview)
+      %li Eastco Holiday Resort (Magaliesberg)
+      %li Hillandale Rehab Hospital (Bloemfontein)
+      %li Netcare Rosebank Rehab Centre (Rosebank)
+      %li Dainfern Country Club (Dainfern)
+
+  %p
+    This comprehensive list does not include the more than 50 swimming schools in the Gauteng area that have experienced the Lex Pools treatment.
+
+  %p
+    At Lex Pools we are committed to beth quality products and excellent service. With our dedicated, well trained and professional staff you acn be certain of a high qulity installation and premium after sales service.
+
+.right
+  = render 'services'
+
+.clear
+
+%h1 
+  %span.a OUR
+  %span.b PARTNERS
+%img{:src=>"images/partners.png", :alt=> 'partners'}
+%img{:src=>"images/flipflops.png", :alt=> 'flipflops'}
+
+
+:javascript
+  $(function(){
+    $("#slides").slides({preload: true, play: 5000, generateNextPrev: true, generatePagination: false});
+    $("#slides").children('a').each(function(i,e){$(e).html('')}) // Clear the 'next' and 'prev' button text
+  });
+
+

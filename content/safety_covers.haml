@@ -1,0 +1,27 @@
+%ul#products.carousel
+  %li
+    %img{:src=>"/images/carousel/cover1.png", :alt=> 'cover'}
+  %li
+    %img{:src=>"/images/carousel/cover2.png", :alt=> 'cover'}
+  %li
+    %img{:src=>"/images/carousel/cover3.png", :alt=> 'cover'}
+.left.main
+  %h1 
+    %span.a SOLID
+    %span.b COVERS
+  %p
+    %b
+      Solid covers provide ultra-protection from the elments for any pool.
+
+  %p
+    Solid covers are mode from heavy-duty, reinforced PVC material. They are designed to prevent dirt, dust, leaves and water from entering the pool, offering a 95% reduction on chemical usage and evaporation as well as vastly reducing filtration time. The cove also insulates the surface reulting in decreased heat loss.
+
+  %p
+    Solid covers can withstand the weight of an adust but should be noted that rainwater can gather on top of the cover posing a drowning risk to small children.
+.right
+  = render 'services'
+.clear
+:JAVASCRIPT
+  $(document).ready(function() {
+    $('ul#products').roundabout();
+  });
