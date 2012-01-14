@@ -60,19 +60,27 @@
 
   %p
     Our systems inculde a non-return valve to protect your pump and filter from back pressure when the system switches off. They also have a vacuum release valve to ensure all pipes and panels are drained when switched off. This ensures that there is no risk of freezing during the winter, giving you a hassle free solar system.
-
+.right
+  = render 'services'
+.right
+  %img{:src=>"/images/suncommand.png", :alt=> 'suncommand', :style => 'margin: 10px 0'}
+.clear
+  
+.left{:style => 'width:450px'}
   %p
     %b Performance
 
   %p Systems can be graded to suit almost any temperature requirement. Please consult our offices for correct grading. However, must units are graded for an 8-9 month swimming season. Here is a typical heating example.
+  %img{:src=>"/images/solar_performance.png", :alt=> 'performance', :style => 'margin: 10px 0'}
 
+.left{:style => 'width: 400px'}
   %p
     %b Panel Efficiency
 
   %p
     A solar panel is most effective on a north facing roof at a 30 degree pitch. Other angles and directions can be effectie, however this needs to be taken into account when grading the system.
-.right
-  = render 'services'
+  %img{:src=>"/images/solar_efficiency.png", :alt=> 'suncommand', :style => 'margin: 10px 0'}
+
 .clear
 :JAVASCRIPT
   $(document).ready(function() {
